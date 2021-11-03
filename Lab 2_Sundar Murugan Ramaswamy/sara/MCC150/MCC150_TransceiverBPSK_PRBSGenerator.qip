@@ -1,0 +1,15 @@
+# This is the QIP file for DSP Builder for Intel FPGAs system 'MCC150_TransceiverBPSK_PRBSGenerator'
+
+set_global_assignment -name VHDL_FILE ../sara/MCC150/MCC150_TransceiverBPSK_safe_path.vhd
+set_global_assignment -name VHDL_FILE ../sara/MCC150/MCC150_TransceiverBPSK_safe_path.vhd
+set_global_assignment -name VHDL_FILE ../sara/MCC150/MCC150_TransceiverBPSK_safe_path.vhd
+set_global_assignment -name VHDL_FILE ../sara/MCC150/MCC150_TransceiverBPSK_safe_path.vhd
+set_global_assignment -name VHDL_FILE ../sara/MCC150/MCC150_TransceiverBPSK_PRBSGenerator.vhd
+set_global_assignment -name VHDL_FILE ../sara/MCC150/MCC150_TransceiverBPSK_PRBSGenerator.vhd
+set_global_assignment -name VHDL_FILE ../sara/MCC150/MCC150_TransceiverBPSK_PRBSGenerator.vhd
+set_global_assignment -name VHDL_FILE ../sara/MCC150/MCC150_TransceiverBPSK_PRBSGenerator.vhd
+set_global_assignment -name HEX_FILE ../sara/MCC150/MCC150_TransceiverBPSK_PRBSGenerator_DualMem.hex
+set_global_assignment -name HEX_FILE ../sara/MCC150/MCC150_TransceiverBPSK_PRBSGenerator_DualMem.hex
+set_global_assignment -name HEX_FILE ../sara/MCC150/MCC150_TransceiverBPSK_PRBSGenerator_DualMem.hex
+set_global_assignment -name HEX_FILE ../sara/MCC150/MCC150_TransceiverBPSK_PRBSGenerator_DualMem.hex
+set_global_assignment -name HEX_FILE ../sara/MCC150/MCC150_TransceiverBPSK_PRBSGenerator_DualMem.hex

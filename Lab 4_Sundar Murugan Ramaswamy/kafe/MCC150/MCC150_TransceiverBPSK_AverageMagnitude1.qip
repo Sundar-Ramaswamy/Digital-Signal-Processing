@@ -1,0 +1,10 @@
+# This is the QIP file for DSP Builder for Intel FPGAs system 'MCC150_TransceiverBPSK_AverageMagnitude1'
+
+set_global_assignment -name VHDL_FILE ../kafe/MCC150/MCC150_TransceiverBPSK_safe_path.vhd
+set_global_assignment -name VHDL_FILE ../kafe/MCC150/MCC150_TransceiverBPSK_safe_path.vhd
+set_global_assignment -name VHDL_FILE ../kafe/MCC150/MCC150_TransceiverBPSK_safe_path.vhd
+set_global_assignment -name VHDL_FILE ../kafe/MCC150/MCC150_TransceiverBPSK_safe_path.vhd
+set_global_assignment -name VHDL_FILE ../kafe/MCC150/MCC150_TransceiverBPSK_AverageMagnitude1.vhd
+set_global_assignment -name VHDL_FILE ../kafe/MCC150/MCC150_TransceiverBPSK_AverageMagnitude1.vhd
+set_global_assignment -name VHDL_FILE ../kafe/MCC150/MCC150_TransceiverBPSK_AverageMagnitude1.vhd
+set_global_assignment -name VHDL_FILE ../kafe/MCC150/MCC150_TransceiverBPSK_AverageMagnitude1.vhd

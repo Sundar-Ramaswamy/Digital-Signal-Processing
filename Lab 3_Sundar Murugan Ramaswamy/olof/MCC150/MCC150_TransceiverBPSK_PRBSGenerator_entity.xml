@@ -1,0 +1,4 @@
+<?xml version='1.0' encoding='ISO-8859-1' ?>
+<entity name='MCC150_TransceiverBPSK_PRBSGenerator' floating-point-script-prefix='MCC150_TransceiverBPSK_PRBSGenerator_fpc'>
+  <clock name='sys' port='clk' reset='areset_n' reset-type='low' />
+</entity>

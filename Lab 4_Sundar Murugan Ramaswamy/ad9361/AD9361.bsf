@@ -1,0 +1,176 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 16 16 248 288)
+	(text "AD9361" (rect 5 0 38 12)(font "Arial" ))
+	(text "inst" (rect 8 256 20 268)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "sys_clk" (rect 0 0 31 12)(font "Arial" ))
+		(text "sys_clk" (rect 21 27 52 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 1))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "rx_clk_in" (rect 0 0 36 12)(font "Arial" ))
+		(text "rx_clk_in" (rect 21 43 57 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 1))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "rx_frame_in" (rect 0 0 50 12)(font "Arial" ))
+		(text "rx_frame_in" (rect 21 59 71 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 1))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "rx_data_in[5..0]" (rect 0 0 62 12)(font "Arial" ))
+		(text "rx_data_in[5..0]" (rect 21 75 83 87)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "spi_miso" (rect 0 0 35 12)(font "Arial" ))
+		(text "spi_miso" (rect 21 91 56 103)(font "Arial" ))
+		(line (pt 0 96)(pt 16 96)(line_width 1))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "data_I_T[11..0]" (rect 0 0 59 12)(font "Arial" ))
+		(text "data_I_T[11..0]" (rect 21 107 80 119)(font "Arial" ))
+		(line (pt 0 112)(pt 16 112)(line_width 3))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "data_Q_T[11..0]" (rect 0 0 63 12)(font "Arial" ))
+		(text "data_Q_T[11..0]" (rect 21 123 84 135)(font "Arial" ))
+		(line (pt 0 128)(pt 16 128)(line_width 3))
+	)
+	(port
+		(pt 232 32)
+		(output)
+		(text "clk_40M" (rect 0 0 35 12)(font "Arial" ))
+		(text "clk_40M" (rect 176 27 211 39)(font "Arial" ))
+		(line (pt 232 32)(pt 216 32)(line_width 1))
+	)
+	(port
+		(pt 232 48)
+		(output)
+		(text "tx_clk_out" (rect 0 0 41 12)(font "Arial" ))
+		(text "tx_clk_out" (rect 170 43 211 55)(font "Arial" ))
+		(line (pt 232 48)(pt 216 48)(line_width 1))
+	)
+	(port
+		(pt 232 64)
+		(output)
+		(text "tx_frame_out" (rect 0 0 55 12)(font "Arial" ))
+		(text "tx_frame_out" (rect 156 59 211 71)(font "Arial" ))
+		(line (pt 232 64)(pt 216 64)(line_width 1))
+	)
+	(port
+		(pt 232 80)
+		(output)
+		(text "tx_data_out[5..0]" (rect 0 0 67 12)(font "Arial" ))
+		(text "tx_data_out[5..0]" (rect 144 75 211 87)(font "Arial" ))
+		(line (pt 232 80)(pt 216 80)(line_width 3))
+	)
+	(port
+		(pt 232 96)
+		(output)
+		(text "ad9361_resetb" (rect 0 0 57 12)(font "Arial" ))
+		(text "ad9361_resetb" (rect 154 91 211 103)(font "Arial" ))
+		(line (pt 232 96)(pt 216 96)(line_width 1))
+	)
+	(port
+		(pt 232 112)
+		(output)
+		(text "ad9361_en_agc" (rect 0 0 62 12)(font "Arial" ))
+		(text "ad9361_en_agc" (rect 149 107 211 119)(font "Arial" ))
+		(line (pt 232 112)(pt 216 112)(line_width 1))
+	)
+	(port
+		(pt 232 128)
+		(output)
+		(text "ad9361_sync" (rect 0 0 53 12)(font "Arial" ))
+		(text "ad9361_sync" (rect 158 123 211 135)(font "Arial" ))
+		(line (pt 232 128)(pt 216 128)(line_width 1))
+	)
+	(port
+		(pt 232 144)
+		(output)
+		(text "ad9361_enable" (rect 0 0 57 12)(font "Arial" ))
+		(text "ad9361_enable" (rect 154 139 211 151)(font "Arial" ))
+		(line (pt 232 144)(pt 216 144)(line_width 1))
+	)
+	(port
+		(pt 232 160)
+		(output)
+		(text "ad9361_txnrx" (rect 0 0 53 12)(font "Arial" ))
+		(text "ad9361_txnrx" (rect 158 155 211 167)(font "Arial" ))
+		(line (pt 232 160)(pt 216 160)(line_width 1))
+	)
+	(port
+		(pt 232 176)
+		(output)
+		(text "spi_csn" (rect 0 0 30 12)(font "Arial" ))
+		(text "spi_csn" (rect 181 171 211 183)(font "Arial" ))
+		(line (pt 232 176)(pt 216 176)(line_width 1))
+	)
+	(port
+		(pt 232 192)
+		(output)
+		(text "spi_clk" (rect 0 0 27 12)(font "Arial" ))
+		(text "spi_clk" (rect 184 187 211 199)(font "Arial" ))
+		(line (pt 232 192)(pt 216 192)(line_width 1))
+	)
+	(port
+		(pt 232 208)
+		(output)
+		(text "spi_mosi" (rect 0 0 35 12)(font "Arial" ))
+		(text "spi_mosi" (rect 176 203 211 215)(font "Arial" ))
+		(line (pt 232 208)(pt 216 208)(line_width 1))
+	)
+	(port
+		(pt 232 224)
+		(output)
+		(text "data_I_R[11..0]" (rect 0 0 61 12)(font "Arial" ))
+		(text "data_I_R[11..0]" (rect 150 219 211 231)(font "Arial" ))
+		(line (pt 232 224)(pt 216 224)(line_width 3))
+	)
+	(port
+		(pt 232 240)
+		(output)
+		(text "data_Q_R[11..0]" (rect 0 0 66 12)(font "Arial" ))
+		(text "data_Q_R[11..0]" (rect 145 235 211 247)(font "Arial" ))
+		(line (pt 232 240)(pt 216 240)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 216 256)(line_width 1))
+	)
+)

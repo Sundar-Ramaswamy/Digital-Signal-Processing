@@ -1,0 +1,26 @@
+<?xml version='1.0'?>
+<island simulinkPath='MCC150/TransceiverBPSK/Decimation' topLevelEntity='MCC150_TransceiverBPSK_Decimation'>
+    <port name='clk' dir='in' role='clock'/>
+    <port name='areset_n' dir='in' clock='clk' role='resetLow'/>
+    <port name='in_4_dv' clock='clk' reset='areset_n' width='1' dir='in' role='valid' qsys_role='valid_in_4_dv' stm='MCC150/MCC150_TransceiverBPSK_Decimation_ChannelIn.stm' highLevelName='dv' highLevelIndex='4' vector='0' complex='0'/>
+    <port name='in_5_dc' clock='clk' reset='areset_n' width='8' dir='in' role='channel' qsys_role='channel_in_5_dc' stm='MCC150/MCC150_TransceiverBPSK_Decimation_ChannelIn.stm' highLevelName='dc' highLevelIndex='5' vector='0' complex='0'/>
+    <port name='in_1_I_in' clock='clk' reset='areset_n' width='12' dir='in' role='data' qsys_role='data_in_1_I_in' stm='MCC150/MCC150_TransceiverBPSK_Decimation_ChannelIn.stm' highLevelName='I_in' highLevelIndex='1' vector='0' complex='0'/>
+    <port name='in_2_Q_in' clock='clk' reset='areset_n' width='12' dir='in' role='data' qsys_role='data_in_2_Q_in' stm='MCC150/MCC150_TransceiverBPSK_Decimation_ChannelIn.stm' highLevelName='Q_in' highLevelIndex='2' vector='0' complex='0'/>
+    <port name='in_3_SampleIndex' clock='clk' reset='areset_n' width='3' dir='in' role='data' qsys_role='data_in_3_SampleIndex' stm='MCC150/MCC150_TransceiverBPSK_Decimation_ChannelIn.stm' highLevelName='SampleIndex' highLevelIndex='3' vector='0' complex='0'/>
+    <port name='out_3_qv' clock='clk' reset='areset_n' width='1' dir='out' role='valid' qsys_role='valid_out_3_qv' stm='MCC150/MCC150_TransceiverBPSK_Decimation_ChannelOut.stm' highLevelName='qv' highLevelIndex='3' vector='0' complex='0'/>
+    <port name='out_4_qc' clock='clk' reset='areset_n' width='8' dir='out' role='channel' qsys_role='channel_out_4_qc' stm='MCC150/MCC150_TransceiverBPSK_Decimation_ChannelOut.stm' highLevelName='qc' highLevelIndex='4' vector='0' complex='0'/>
+    <port name='out_1_I_out' clock='clk' reset='areset_n' width='12' dir='out' role='data' qsys_role='data_out_1_I_out' stm='MCC150/MCC150_TransceiverBPSK_Decimation_ChannelOut.stm' highLevelName='I_out' highLevelIndex='1' vector='0' complex='0'/>
+    <port name='out_2_Q_out' clock='clk' reset='areset_n' width='12' dir='out' role='data' qsys_role='data_out_2_Q_out' stm='MCC150/MCC150_TransceiverBPSK_Decimation_ChannelOut.stm' highLevelName='Q_out' highLevelIndex='2' vector='0' complex='0'/>
+    <port name='out_5_I_adj' clock='clk' reset='areset_n' width='12' dir='out' role='data' qsys_role='data_out_5_I_adj' stm='MCC150/MCC150_TransceiverBPSK_Decimation_ChannelOut.stm' highLevelName='I_adj' highLevelIndex='5' vector='0' complex='0'/>
+    <port name='out_6_Q_adj' clock='clk' reset='areset_n' width='12' dir='out' role='data' qsys_role='data_out_6_Q_adj' stm='MCC150/MCC150_TransceiverBPSK_Decimation_ChannelOut.stm' highLevelName='Q_adj' highLevelIndex='6' vector='0' complex='0'/>
+    <file path='eda/sim_lib/altera_primitives_components.vhd' base='quartus' type='vhdl' usage='simOnly' lib='altera'/>
+    <file path='eda/sim_lib/altera_mf_components.vhd' base='quartus' type='vhdl' usage='simOnly' lib='altera_mf'/>
+    <file path='eda/sim_lib/altera_mf.vhd' base='quartus' type='vhdl' usage='simOnly' lib='altera_mf'/>
+    <file path='eda/sim_lib/220pack.vhd' base='quartus' type='vhdl' usage='simOnly' lib='lpm'/>
+    <file path='eda/sim_lib/220model.vhd' base='quartus' type='vhdl' usage='simOnly' lib='lpm'/>
+    <file path='eda/sim_lib/altera_lnsim_components.vhd' base='quartus' type='vhdl' usage='simOnly' lib='altera_lnsim'/>
+    <file path='eda/sim_lib/altera_lnsim.sv' base='quartus' type='vhdl' usage='simOnly' lib='altera_lnsim'/>
+    <file path='eda/sim_lib/twentynm_atoms.vhd' base='quartus' type='vhdl' usage='simOnly' lib='twentynm'/>
+    <file path='eda/sim_lib/twentynm_components.vhd' base='quartus' type='vhdl' usage='simOnly' lib='twentynm'/>
+    <file path='eda/sim_lib/mentor/twentynm_atoms_ncrypt.v' base='quartus' type='vhdl' usage='simOnly' lib='twentynm'/>
+</island>

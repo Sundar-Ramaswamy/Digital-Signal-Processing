@@ -1,0 +1,22 @@
+<?xml version='1.0'?>
+<island simulinkPath='MCC150/TransceiverBPSK/Modulator' topLevelEntity='MCC150_TransceiverBPSK_Modulator'>
+    <port name='clk' dir='in' role='clock'/>
+    <port name='areset_n' dir='in' clock='clk' role='resetLow'/>
+    <port name='in_1_dv_x' clock='clk' reset='areset_n' width='1' dir='in' role='valid' qsys_role='valid_in_1_dv_x' stm='MCC150/MCC150_TransceiverBPSK_Modulator_ChannelIn.stm' highLevelName='dv
+' highLevelIndex='1' vector='0' complex='0'/>
+    <port name='in_2_dc' clock='clk' reset='areset_n' width='8' dir='in' role='channel' qsys_role='channel_in_2_dc' stm='MCC150/MCC150_TransceiverBPSK_Modulator_ChannelIn.stm' highLevelName='dc' highLevelIndex='2' vector='0' complex='0'/>
+    <port name='in_3_Data' clock='clk' reset='areset_n' width='1' dir='in' role='data' qsys_role='data_in_3_Data' stm='MCC150/MCC150_TransceiverBPSK_Modulator_ChannelIn.stm' highLevelName='Data' highLevelIndex='3' vector='0' complex='0'/>
+    <port name='out_1_qv' clock='clk' reset='areset_n' width='1' dir='out' role='valid' qsys_role='valid_out_1_qv' stm='MCC150/MCC150_TransceiverBPSK_Modulator_ChannelOut.stm' highLevelName='qv' highLevelIndex='1' vector='0' complex='0'/>
+    <port name='out_2_qc' clock='clk' reset='areset_n' width='8' dir='out' role='channel' qsys_role='channel_out_2_qc' stm='MCC150/MCC150_TransceiverBPSK_Modulator_ChannelOut.stm' highLevelName='qc' highLevelIndex='2' vector='0' complex='0'/>
+    <port name='out_3_I' clock='clk' reset='areset_n' width='12' dir='out' role='data' qsys_role='data_out_3_I' stm='MCC150/MCC150_TransceiverBPSK_Modulator_ChannelOut.stm' highLevelName='I' highLevelIndex='3' vector='0' complex='0'/>
+    <file path='eda/sim_lib/altera_primitives_components.vhd' base='quartus' type='vhdl' usage='simOnly' lib='altera'/>
+    <file path='eda/sim_lib/altera_mf_components.vhd' base='quartus' type='vhdl' usage='simOnly' lib='altera_mf'/>
+    <file path='eda/sim_lib/altera_mf.vhd' base='quartus' type='vhdl' usage='simOnly' lib='altera_mf'/>
+    <file path='eda/sim_lib/220pack.vhd' base='quartus' type='vhdl' usage='simOnly' lib='lpm'/>
+    <file path='eda/sim_lib/220model.vhd' base='quartus' type='vhdl' usage='simOnly' lib='lpm'/>
+    <file path='eda/sim_lib/altera_lnsim_components.vhd' base='quartus' type='vhdl' usage='simOnly' lib='altera_lnsim'/>
+    <file path='eda/sim_lib/altera_lnsim.sv' base='quartus' type='vhdl' usage='simOnly' lib='altera_lnsim'/>
+    <file path='eda/sim_lib/twentynm_atoms.vhd' base='quartus' type='vhdl' usage='simOnly' lib='twentynm'/>
+    <file path='eda/sim_lib/twentynm_components.vhd' base='quartus' type='vhdl' usage='simOnly' lib='twentynm'/>
+    <file path='eda/sim_lib/mentor/twentynm_atoms_ncrypt.v' base='quartus' type='vhdl' usage='simOnly' lib='twentynm'/>
+</island>

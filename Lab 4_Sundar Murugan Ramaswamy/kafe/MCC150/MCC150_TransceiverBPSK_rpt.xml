@@ -1,0 +1,57 @@
+<?xml version='1.0'?>
+<island simulinkPath='MCC150/TransceiverBPSK' topLevelEntity='MCC150_TransceiverBPSK'>
+    <port name='clk' dir='in' role='clock'/>
+    <port name='areset_n' dir='in' clock='clk' role='resetLow'/>
+    <port name='I_in_x' clock='clk' reset='areset_n' width='12' dir='in' role='data' qsys_role='data_I_in_x' stm='MCC150/MCC150_TransceiverBPSK_SingleRateFIR_xIn.stm' highLevelName='I_in
+' highLevelIndex='1' vector='0' complex='0'/>
+    <port name='Q_in' clock='clk' reset='areset_n' width='12' dir='in' role='data' qsys_role='data_Q_in' stm='MCC150/MCC150_TransceiverBPSK_SingleRateFIR1_xIn.stm' highLevelName='Q_in' highLevelIndex='2' vector='0' complex='0'/>
+    <port name='I_out' clock='clk' reset='areset_n' width='12' dir='out' role='data' qsys_role='data_I_out' stm='MCC150/MCC150_TransceiverBPSK_Scale_qOut.stm' highLevelName='I_out' highLevelIndex='1' vector='0' complex='0'/>
+    <port name='Q_out' clock='clk' reset='areset_n' width='12' dir='out' role='data' qsys_role='data_Q_out' stm='' highLevelName='Q_out' highLevelIndex='2' vector='0' complex='0'/>
+    <port name='Symb_I_x' clock='clk' reset='areset_n' width='14' dir='out' role='data' qsys_role='data_Symb_I_x' stm='MCC150/MCC150_TransceiverBPSK_CPR_ChannelOut.stm' highLevelName=' Symb I ' highLevelIndex='3' vector='0' complex='0'/>
+    <port name='Symb_Q' clock='clk' reset='areset_n' width='14' dir='out' role='data' qsys_role='data_Symb_Q' stm='MCC150/MCC150_TransceiverBPSK_CPR_ChannelOut.stm' highLevelName=' Symb Q' highLevelIndex='4' vector='0' complex='0'/>
+    <port name='SampleIndex' clock='clk' reset='areset_n' width='3' dir='out' role='data' qsys_role='data_SampleIndex' stm='MCC150/MCC150_TransceiverBPSK_IndexUpdate_ChannelOut.stm' highLevelName=' SampleIndex' highLevelIndex='5' vector='0' complex='0'/>
+    <port name='Demod_out' clock='clk' reset='areset_n' width='1' dir='out' role='data' qsys_role='data_Demod_out' stm='MCC150/MCC150_TransceiverBPSK_Demodulator_ChannelOut.stm' highLevelName='Demod_out' highLevelIndex='6' vector='0' complex='0'/>
+    <file path='eda/sim_lib/altera_primitives_components.vhd' base='quartus' type='vhdl' usage='simOnly' lib='altera'/>
+    <file path='eda/sim_lib/altera_mf_components.vhd' base='quartus' type='vhdl' usage='simOnly' lib='altera_mf'/>
+    <file path='eda/sim_lib/altera_mf.vhd' base='quartus' type='vhdl' usage='simOnly' lib='altera_mf'/>
+    <file path='eda/sim_lib/220pack.vhd' base='quartus' type='vhdl' usage='simOnly' lib='lpm'/>
+    <file path='eda/sim_lib/220model.vhd' base='quartus' type='vhdl' usage='simOnly' lib='lpm'/>
+    <file path='eda/sim_lib/altera_lnsim_components.vhd' base='quartus' type='vhdl' usage='simOnly' lib='altera_lnsim'/>
+    <file path='eda/sim_lib/altera_lnsim.sv' base='quartus' type='vhdl' usage='simOnly' lib='altera_lnsim'/>
+    <file path='eda/sim_lib/twentynm_atoms.vhd' base='quartus' type='vhdl' usage='simOnly' lib='twentynm'/>
+    <file path='eda/sim_lib/twentynm_components.vhd' base='quartus' type='vhdl' usage='simOnly' lib='twentynm'/>
+    <file path='eda/sim_lib/mentor/twentynm_atoms_ncrypt.v' base='quartus' type='vhdl' usage='simOnly' lib='twentynm'/>
+    <file path='MCC150/MCC150_TransceiverBPSK_safe_path_msim.vhd' base='rtl' type='vhdl' usage='simOnly'/>
+    <file path='MCC150/MCC150_TransceiverBPSK_safe_path.vhd' base='rtl' type='vhdl' usage='synthOnly'/>
+    <file path='MCC150/MCC150_TransceiverBPSK.vhd' base='rtl' type='vhdl' usage='all'/>
+    <file path='dspba/backend/Libraries/vhdl/base/dspba_library_package.vhd' base='quartus' type='vhdl' usage='all'/>
+    <file path='dspba/backend/Libraries/vhdl/base/dspba_library.vhd' base='quartus' type='vhdl' usage='all'/>
+    <file path='MCC150/MCC150_TransceiverBPSK_AverageMagnitude1.vhd' base='rtl' type='vhdl' usage='all'/>
+    <file path='MCC150/MCC150_TransceiverBPSK_AverageMagnitude3.vhd' base='rtl' type='vhdl' usage='all'/>
+    <file path='MCC150/MCC150_TransceiverBPSK_CPR.vhd' base='rtl' type='vhdl' usage='all'/>
+    <file path='MCC150/MCC150_TransceiverBPSK_Decimation.vhd' base='rtl' type='vhdl' usage='all'/>
+    <file path='MCC150/MCC150_TransceiverBPSK_Demodulator.vhd' base='rtl' type='vhdl' usage='all'/>
+    <file path='MCC150/MCC150_TransceiverBPSK_IndexUpdate.vhd' base='rtl' type='vhdl' usage='all'/>
+    <file path='MCC150/MCC150_TransceiverBPSK_InterpolatingFIR.vhd' base='rtl' type='vhdl' usage='all'/>
+    <file path='MCC150/MCC150_TransceiverBPSK_Magnitude1.vhd' base='rtl' type='vhdl' usage='all'/>
+    <file path='MCC150/MCC150_TransceiverBPSK_Magnitude1_cPrimeTableOut_uid40_Sqrt_lutmem.hex' base='rtl' type='data' usage='all'/>
+    <file path='MCC150/MCC150_TransceiverBPSK_Magnitude1_cPrimeTableOut_uid41_Sqrt_lutmem.hex' base='rtl' type='data' usage='all'/>
+    <file path='MCC150/MCC150_TransceiverBPSK_Magnitude1_cPrimeTableOut_uid42_Sqrt_lutmem.hex' base='rtl' type='data' usage='all'/>
+    <file path='MCC150/MCC150_TransceiverBPSK_Magnitude1_cPrimeTableOut_uid43_Sqrt_lutmem.hex' base='rtl' type='data' usage='all'/>
+    <file path='MCC150/MCC150_TransceiverBPSK_Magnitude1_cPrimeTableOut_uid44_Sqrt_lutmem.hex' base='rtl' type='data' usage='all'/>
+    <file path='MCC150/MCC150_TransceiverBPSK_Magnitude2.vhd' base='rtl' type='vhdl' usage='all'/>
+    <file path='MCC150/MCC150_TransceiverBPSK_Magnitude2_cPrimeTableOut_uid40_Sqrt_lutmem.hex' base='rtl' type='data' usage='all'/>
+    <file path='MCC150/MCC150_TransceiverBPSK_Magnitude2_cPrimeTableOut_uid41_Sqrt_lutmem.hex' base='rtl' type='data' usage='all'/>
+    <file path='MCC150/MCC150_TransceiverBPSK_Magnitude2_cPrimeTableOut_uid42_Sqrt_lutmem.hex' base='rtl' type='data' usage='all'/>
+    <file path='MCC150/MCC150_TransceiverBPSK_Magnitude2_cPrimeTableOut_uid43_Sqrt_lutmem.hex' base='rtl' type='data' usage='all'/>
+    <file path='MCC150/MCC150_TransceiverBPSK_Magnitude2_cPrimeTableOut_uid44_Sqrt_lutmem.hex' base='rtl' type='data' usage='all'/>
+    <file path='MCC150/MCC150_TransceiverBPSK_Modulator.vhd' base='rtl' type='vhdl' usage='all'/>
+    <file path='MCC150/MCC150_TransceiverBPSK_PRBSGenerator.vhd' base='rtl' type='vhdl' usage='all'/>
+    <file path='MCC150/MCC150_TransceiverBPSK_PRBSGenerator_DualMem.hex' base='rtl' type='data' usage='all'/>
+    <file path='MCC150/MCC150_TransceiverBPSK_Scale.vhd' base='rtl' type='vhdl' usage='all'/>
+    <file path='MCC150/MCC150_TransceiverBPSK_Scale1.vhd' base='rtl' type='vhdl' usage='all'/>
+    <file path='MCC150/MCC150_TransceiverBPSK_Scale2.vhd' base='rtl' type='vhdl' usage='all'/>
+    <file path='MCC150/MCC150_TransceiverBPSK_SingleRateFIR.vhd' base='rtl' type='vhdl' usage='all'/>
+    <file path='MCC150/MCC150_TransceiverBPSK_SingleRateFIR1.vhd' base='rtl' type='vhdl' usage='all'/>
+
+</island>

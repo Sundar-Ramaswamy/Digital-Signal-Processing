@@ -1,0 +1,24 @@
+# This is the QIP file for DSP Builder for Intel FPGAs system 'MCC150_TransceiverBPSK'
+
+set_global_assignment -name VHDL_FILE ../olof/MCC150/MCC150_TransceiverBPSK_safe_path.vhd
+set_global_assignment -name VHDL_FILE ../olof/MCC150/MCC150_TransceiverBPSK_safe_path.vhd
+set_global_assignment -name VHDL_FILE ../olof/MCC150/MCC150_TransceiverBPSK_safe_path.vhd
+set_global_assignment -name VHDL_FILE ../olof/MCC150/MCC150_TransceiverBPSK_safe_path.vhd
+set_global_assignment -name VHDL_FILE ../olof/MCC150/MCC150_TransceiverBPSK.vhd
+set_global_assignment -name VHDL_FILE ../olof/MCC150/MCC150_TransceiverBPSK.vhd
+set_global_assignment -name VHDL_FILE ../olof/MCC150/MCC150_TransceiverBPSK.vhd
+set_global_assignment -name VHDL_FILE ../olof/MCC150/MCC150_TransceiverBPSK.vhd
+set_global_assignment -name QIP_FILE ../olof/MCC150/MCC150_TransceiverBPSK_AverageMagnitude1.qip
+set_global_assignment -name QIP_FILE ../olof/MCC150/MCC150_TransceiverBPSK_AverageMagnitude3.qip
+set_global_assignment -name QIP_FILE ../olof/MCC150/MCC150_TransceiverBPSK_Decimation.qip
+set_global_assignment -name QIP_FILE ../olof/MCC150/MCC150_TransceiverBPSK_IndexUpdate.qip
+set_global_assignment -name QIP_FILE ../olof/MCC150/MCC150_TransceiverBPSK_InterpolatingFIR.qip
+set_global_assignment -name QIP_FILE ../olof/MCC150/MCC150_TransceiverBPSK_Magnitude1.qip
+set_global_assignment -name QIP_FILE ../olof/MCC150/MCC150_TransceiverBPSK_Magnitude2.qip
+set_global_assignment -name QIP_FILE ../olof/MCC150/MCC150_TransceiverBPSK_Modulator.qip
+set_global_assignment -name QIP_FILE ../olof/MCC150/MCC150_TransceiverBPSK_PRBSGenerator.qip
+set_global_assignment -name QIP_FILE ../olof/MCC150/MCC150_TransceiverBPSK_Scale.qip
+set_global_assignment -name QIP_FILE ../olof/MCC150/MCC150_TransceiverBPSK_Scale1.qip
+set_global_assignment -name QIP_FILE ../olof/MCC150/MCC150_TransceiverBPSK_Scale2.qip
+set_global_assignment -name QIP_FILE ../olof/MCC150/MCC150_TransceiverBPSK_SingleRateFIR.qip
+set_global_assignment -name QIP_FILE ../olof/MCC150/MCC150_TransceiverBPSK_SingleRateFIR1.qip

@@ -1,0 +1,23 @@
+<?xml version='1.0'?>
+<island simulinkPath='MCC150/TransceiverBPSK/CPR' topLevelEntity='MCC150_TransceiverBPSK_CPR'>
+    <port name='clk' dir='in' role='clock'/>
+    <port name='areset_n' dir='in' clock='clk' role='resetLow'/>
+    <port name='in_3_dv' clock='clk' reset='areset_n' width='1' dir='in' role='valid' qsys_role='valid_in_3_dv' stm='MCC150/MCC150_TransceiverBPSK_CPR_ChannelIn.stm' highLevelName='dv' highLevelIndex='3' vector='0' complex='0'/>
+    <port name='in_4_dc' clock='clk' reset='areset_n' width='8' dir='in' role='channel' qsys_role='channel_in_4_dc' stm='MCC150/MCC150_TransceiverBPSK_CPR_ChannelIn.stm' highLevelName='dc' highLevelIndex='4' vector='0' complex='0'/>
+    <port name='in_1_I_in' clock='clk' reset='areset_n' width='12' dir='in' role='data' qsys_role='data_in_1_I_in' stm='MCC150/MCC150_TransceiverBPSK_CPR_ChannelIn.stm' highLevelName='I_in' highLevelIndex='1' vector='0' complex='0'/>
+    <port name='in_2_Q_in' clock='clk' reset='areset_n' width='12' dir='in' role='data' qsys_role='data_in_2_Q_in' stm='MCC150/MCC150_TransceiverBPSK_CPR_ChannelIn.stm' highLevelName='Q_in' highLevelIndex='2' vector='0' complex='0'/>
+    <port name='out_3_Qv' clock='clk' reset='areset_n' width='1' dir='out' role='valid' qsys_role='valid_out_3_Qv' stm='MCC150/MCC150_TransceiverBPSK_CPR_ChannelOut.stm' highLevelName='Qv' highLevelIndex='3' vector='0' complex='0'/>
+    <port name='out_4_Qc' clock='clk' reset='areset_n' width='8' dir='out' role='channel' qsys_role='channel_out_4_Qc' stm='MCC150/MCC150_TransceiverBPSK_CPR_ChannelOut.stm' highLevelName='Qc' highLevelIndex='4' vector='0' complex='0'/>
+    <port name='out_1_I_Out' clock='clk' reset='areset_n' width='14' dir='out' role='data' qsys_role='data_out_1_I_Out' stm='MCC150/MCC150_TransceiverBPSK_CPR_ChannelOut.stm' highLevelName='I_Out' highLevelIndex='1' vector='0' complex='0'/>
+    <port name='out_2_Q_Out' clock='clk' reset='areset_n' width='14' dir='out' role='data' qsys_role='data_out_2_Q_Out' stm='MCC150/MCC150_TransceiverBPSK_CPR_ChannelOut.stm' highLevelName='Q_Out' highLevelIndex='2' vector='0' complex='0'/>
+    <file path='eda/sim_lib/altera_primitives_components.vhd' base='quartus' type='vhdl' usage='simOnly' lib='altera'/>
+    <file path='eda/sim_lib/altera_mf_components.vhd' base='quartus' type='vhdl' usage='simOnly' lib='altera_mf'/>
+    <file path='eda/sim_lib/altera_mf.vhd' base='quartus' type='vhdl' usage='simOnly' lib='altera_mf'/>
+    <file path='eda/sim_lib/220pack.vhd' base='quartus' type='vhdl' usage='simOnly' lib='lpm'/>
+    <file path='eda/sim_lib/220model.vhd' base='quartus' type='vhdl' usage='simOnly' lib='lpm'/>
+    <file path='eda/sim_lib/altera_lnsim_components.vhd' base='quartus' type='vhdl' usage='simOnly' lib='altera_lnsim'/>
+    <file path='eda/sim_lib/altera_lnsim.sv' base='quartus' type='vhdl' usage='simOnly' lib='altera_lnsim'/>
+    <file path='eda/sim_lib/twentynm_atoms.vhd' base='quartus' type='vhdl' usage='simOnly' lib='twentynm'/>
+    <file path='eda/sim_lib/twentynm_components.vhd' base='quartus' type='vhdl' usage='simOnly' lib='twentynm'/>
+    <file path='eda/sim_lib/mentor/twentynm_atoms_ncrypt.v' base='quartus' type='vhdl' usage='simOnly' lib='twentynm'/>
+</island>

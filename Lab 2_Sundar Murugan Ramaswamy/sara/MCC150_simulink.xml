@@ -1,0 +1,644 @@
+
+<dsp-builder xmlns="http://www.altera.com/ns/2011/dsp-builder">
+
+  <design version="1.2">
+    <param name="designGenerator">"DSP Builder 18.0std b614 "</param>
+    <param name="generateAbsoluteOutputPath">"Z:\\LAB 2 DSP/../sara"</param>
+    <param name="generateLanguage">VHDL</param>
+    <param name="generateOutputPath">"../sara"</param>
+    <param name="generateSubPath">MCC150</param>
+    <model name="MCC150_TransceiverBPSK">
+      <param name="avalonMMInterfaceName">bus</param>
+      <param name="generateHwTcl">true</param>
+      <param name="simulinkHasDeviceBlock">true</param>
+      <param name="simulinkPath">"MCC150/TransceiverBPSK"</param>
+      <param name="synthATBChannelMismatch">synthATBModeError</param>
+      <param name="synthATBFloatThreshold">0</param>
+      <param name="synthATBFloatZeroThreshold">0</param>
+      <param name="synthATBGPIOMismatch">synthATBModeWarning</param>
+      <param name="synthBusAddrWidth">10</param>
+      <param name="synthBusClockMode">synthBusClockSys</param>
+      <param name="synthBusDataWidth">16</param>
+      <param name="synthBusEndianMode">synthBusEndianBig</param>
+      <param name="synthBusFreq">40</param>
+      <param name="synthCircuitTimed">true</param>
+      <param name="synthClockFreq">40</param>
+      <param name="synthClockName">clk</param>
+      <param name="synthCycleAccurate">false</param>
+      <param name="synthDeviceFamily">"Arria 10"</param>
+      <param name="synthDeviceInitialiseMemories">true</param>
+      <param name="synthDevicePart">"10AX066K2F35I1LG"</param>
+      <param name="synthDeviceSpeedGrade">"1"</param>
+      <param name="synthDeviceSubFamily">""</param>
+      <param name="synthGenerateATB">true</param>
+      <param name="synthOutputMode">synthOutputHDLRoot</param>
+      <param name="synthResetActiveMode">synthResetActiveLow</param>
+      <param name="synthResetName">areset_n</param>
+      <block name="(pin (1 &quot;I_in&#xA;&quot;))">
+        <param name="0">[/MCC150_TransceiverBPSK/inputBlock/(1 "I_in
+")]</param>
+        <param name="blockType">typePinBlock</param>
+        <param name="typePinType">(typeSFixed 12 0)</param>
+      </block>
+      <block name="(pin (1 I_out))">
+        <param name="0">[/MCC150_TransceiverBPSK/Scale/scaleWireData]</param>
+        <param name="blockType">typePinBlock</param>
+        <param name="metadataTuple">()</param>
+        <param name="typePinType">(typeSFixed 12 0)</param>
+      </block>
+      <block name="(pin (2 Q_in))">
+        <param name="0">[/MCC150_TransceiverBPSK/inputBlock/(2 Q_in)]</param>
+        <param name="blockType">typePinBlock</param>
+        <param name="typePinType">(typeSFixed 12 0)</param>
+      </block>
+      <block name="(pin (2 Q_out))">
+        <param name="0">[/MCC150_TransceiverBPSK/Const/primWireOut]</param>
+        <param name="blockType">typePinBlock</param>
+        <param name="metadataTuple">()</param>
+        <param name="typePinType">(typeSFixed 12 0)</param>
+      </block>
+      <block name="(pin (3 &quot; Symb I &quot;))">
+        <param name="0">[/MCC150_TransceiverBPSK/Decimation/(1 I_out)]</param>
+        <param name="blockType">typePinBlock</param>
+        <param name="metadataTuple">()</param>
+        <param name="typePinType">(typeSFixed 12 0)</param>
+      </block>
+      <block name="(pin (3 SampleIndex))">
+        <param name="0">[/MCC150_TransceiverBPSK/inputBlock/(3 SampleIndex)]</param>
+        <param name="blockType">typePinBlock</param>
+        <param name="typePinType">(typeUFixed 3 0)</param>
+      </block>
+      <block name="(pin (4 &quot; Symb Q&quot;))">
+        <param name="0">[/MCC150_TransceiverBPSK/Decimation/(2 Q_out)]</param>
+        <param name="blockType">typePinBlock</param>
+        <param name="metadataTuple">()</param>
+        <param name="typePinType">(typeSFixed 12 0)</param>
+      </block>
+      <block name="Const">
+        <param name="blockType">constBlock</param>
+        <param name="constType">(typeSFixed 12 0)</param>
+        <param name="constValue">0</param>
+        <param name="simulinkExtraCacheKeys">((1 12 0 0 1 0))</param>
+        <wire name="primWireOut"/>
+      </block>
+      <block name="Const1">
+        <param name="blockType">constBlock</param>
+        <param name="constType">(typeUFixed 1 0)</param>
+        <param name="constValue">1</param>
+        <param name="simulinkExtraCacheKeys">((1 1 0 ^4))</param>
+        <wire name="primWireOut"/>
+      </block>
+      <block name="Const2">
+        <param name="blockType">constBlock</param>
+        <param name="constType">(typeUFixed 1 0)</param>
+        <param name="constValue">1</param>
+        <param name="simulinkExtraCacheKeys">((1 1 0 ^4))</param>
+        <wire name="primWireOut"/>
+      </block>
+      <block name="Const3">
+        <param name="blockType">constBlock</param>
+        <param name="constType">(typeUFixed 8 0)</param>
+        <param name="constValue">0</param>
+        <param name="simulinkExtraCacheKeys">((1 8 0 ^4))</param>
+        <wire name="primWireOut"/>
+      </block>
+      <block name="Const4">
+        <param name="blockType">constBlock</param>
+        <param name="constType">(typeUFixed 8 0)</param>
+        <param name="constValue">0</param>
+        <param name="simulinkExtraCacheKeys">((1 8 0 ^4))</param>
+        <wire name="primWireOut"/>
+      </block>
+      <block name="Decimation">
+        <param name="(1 I_in)">[/MCC150_TransceiverBPSK/Scale1/scaleWireData]</param>
+        <param name="(2 Q_in)">[/MCC150_TransceiverBPSK/Scale2/scaleWireData]</param>
+        <param name="(3 SampleIndex)">[/MCC150_TransceiverBPSK/inputBlock/(3 SampleIndex)]</param>
+        <param name="(4 dv)">[/MCC150_TransceiverBPSK/Scale1/wireValid]</param>
+        <param name="(5 dc)">[/MCC150_TransceiverBPSK/Scale1/wireChannel]</param>
+        <param name="blockType">modelBlock</param>
+        <param name="modelNode">[/MCC150_TransceiverBPSK_Decimation]</param>
+        <param name="simulinkExtraCacheKeys">((1 12 0 0 1 0) (1 12 0 0 1 0) (1 3 0 ^4) (1 1 0 ^4) (1 8 0 ^4) (1 12 0 0 1 0) (1 12 0 0 1 0) (1 1 0 ^4) (1 8 0 ^4))</param>
+        <wire name="(1 I_out)"/>
+        <wire name="(2 Q_out)"/>
+        <wire name="(3 qv)"/>
+        <wire name="(4 qc)"/>
+      </block>
+      <block name="InterpolatingFIR">
+        <param name="blockType">firBlock</param>
+        <param name="firBandCount">1</param>
+        <param name="firChannelCount">1</param>
+        <param name="firCoefs">((-0xDp-12 -0xAp-12 0 0xCp-12 0x1.3p-8 0xFp-12 0 -0x1.2p-8 -0x1.dp-8 -0x1.8p-8 0 0x2p-8 0x3.5p-8 0x2.dp-8 0 -0x4.4p-8 -0x7.bp-8 -0x7.4p-8 0 0xF.8p-8 0x2.67p-4 0x4.13p-4 0x5.a8p-4 0x6.cap-4 0x7.34p-4 0x6.cap-4 0x5.a8p-4 0x4.13p-4 0x2.67p-4 0xF.8p-8 0 -0x7.4p-8 -0x7.bp-8 -0x4.4p-8 0 0x2.dp-8 0x3.5p-8 0x2p-8 0 -0x1.8p-8 -0x1.dp-8 -0x1.2p-8 0 0xFp-12 0x1.3p-8 0xCp-12 0 -0xAp-12 -0xDp-12))</param>
+        <param name="firCoefsType">(typeSFixed 0 12)</param>
+        <param name="firDecimFactor">1</param>
+        <param name="firInputRate">5</param>
+        <param name="firInterpFactor">8</param>
+        <param name="firMM">((0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15))</param>
+        <param name="firPortData">[/MCC150_TransceiverBPSK/Modulator/(3 I)]</param>
+        <param name="firShapeType">firShapeSymmetrical</param>
+        <param name="portChannel">[/MCC150_TransceiverBPSK/Modulator/(2 qc)]</param>
+        <param name="portValid">[/MCC150_TransceiverBPSK/Modulator/(1 qv)]</param>
+        <param name="simulinkExtraCacheKeys">((1 12 0 0 1 0) (1 1 0 ^4) (1 8 0 ^4) (1 27 12 0 1 0) (1 1 0 ^4) (1 8 0 ^4))</param>
+        <param name="simulinkPath">"MCC150/TransceiverBPSK/InterpolatingFIR"</param>
+        <wire name="firWireData"/>
+        <wire name="wireChannel"/>
+        <wire name="wireValid"/>
+      </block>
+      <block name="Modulator">
+        <param name="(1 &quot;dv&#xA;&quot;)">[/MCC150_TransceiverBPSK/PRBSGenerator/(1 qv)]</param>
+        <param name="(2 dc)">[/MCC150_TransceiverBPSK/PRBSGenerator/(2 qc)]</param>
+        <param name="(3 Data)">[/MCC150_TransceiverBPSK/PRBSGenerator/(3 PRBS)]</param>
+        <param name="blockType">modelBlock</param>
+        <param name="modelNode">[/MCC150_TransceiverBPSK_Modulator]</param>
+        <param name="simulinkExtraCacheKeys">((1 1 0 ^4) (1 8 0 ^4) (1 1 0 ^4) (1 1 0 ^4) (1 8 0 ^4) (1 12 0 0 1 0))</param>
+        <wire name="(1 qv)"/>
+        <wire name="(2 qc)"/>
+        <wire name="(3 I)"/>
+      </block>
+      <block name="PRBSGenerator">
+        <param name="blockType">modelBlock</param>
+        <param name="modelNode">[/MCC150_TransceiverBPSK_PRBSGenerator]</param>
+        <param name="simulinkExtraCacheKeys">((1 1 0 ^4) (1 8 0 ^4) (1 1 0 ^4))</param>
+        <wire name="(1 qv)"/>
+        <wire name="(2 qc)"/>
+        <wire name="(3 PRBS)"/>
+      </block>
+      <block name="Scale">
+        <param name="blockType">scaleBlock</param>
+        <param name="portChannel">[/MCC150_TransceiverBPSK/InterpolatingFIR/wireChannel]</param>
+        <param name="portValid">[/MCC150_TransceiverBPSK/InterpolatingFIR/wireValid]</param>
+        <param name="scaleOutputType">(typeSFixed 12 0)</param>
+        <param name="scalePortData">[/MCC150_TransceiverBPSK/InterpolatingFIR/firWireData]</param>
+        <param name="scaleRoundingMode">roundingBiased</param>
+        <param name="scaleSaturateMode">saturateSymmetric</param>
+        <param name="scaleShiftVector">(0)</param>
+        <param name="simulinkExtraCacheKeys">((1 27 12 0 1 0) (1 1 0 ^4) (1 8 0 ^4) (1 1 0 ^4) (1 12 0 0 1 0) (1 1 0 ^4) (1 8 0 ^4) (1 1 0 ^4))</param>
+        <param name="simulinkPath">"MCC150/TransceiverBPSK/Scale"</param>
+        <param name="synthBitAccurate">false</param>
+        <wire name="scaleWireData"/>
+        <wire name="scaleWireOverflow"/>
+        <wire name="wireChannel"/>
+        <wire name="wireValid"/>
+      </block>
+      <block name="Scale1">
+        <param name="blockType">scaleBlock</param>
+        <param name="portChannel">[/MCC150_TransceiverBPSK/SingleRateFIR/wireChannel]</param>
+        <param name="portValid">[/MCC150_TransceiverBPSK/SingleRateFIR/wireValid]</param>
+        <param name="scaleOutputType">(typeSFixed 12 0)</param>
+        <param name="scalePortData">[/MCC150_TransceiverBPSK/SingleRateFIR/firWireData]</param>
+        <param name="scaleRoundingMode">roundingBiased</param>
+        <param name="scaleSaturateMode">saturateSymmetric</param>
+        <param name="scaleShiftVector">(-1)</param>
+        <param name="simulinkExtraCacheKeys">((1 30 12 0 1 0) (1 1 0 ^4) (1 8 0 ^4) (1 1 0 ^4) (1 12 0 0 1 0) (1 1 0 ^4) (1 8 0 ^4) (1 1 0 ^4))</param>
+        <param name="simulinkPath">"MCC150/TransceiverBPSK/Scale1"</param>
+        <param name="synthBitAccurate">false</param>
+        <wire name="scaleWireData"/>
+        <wire name="scaleWireOverflow"/>
+        <wire name="wireChannel"/>
+        <wire name="wireValid"/>
+      </block>
+      <block name="Scale2">
+        <param name="blockType">scaleBlock</param>
+        <param name="portChannel">[/MCC150_TransceiverBPSK/SingleRateFIR1/wireChannel]</param>
+        <param name="portValid">[/MCC150_TransceiverBPSK/SingleRateFIR1/wireValid]</param>
+        <param name="scaleOutputType">(typeSFixed 12 0)</param>
+        <param name="scalePortData">[/MCC150_TransceiverBPSK/SingleRateFIR1/firWireData]</param>
+        <param name="scaleRoundingMode">roundingBiased</param>
+        <param name="scaleSaturateMode">saturateSymmetric</param>
+        <param name="scaleShiftVector">(-1)</param>
+        <param name="simulinkExtraCacheKeys">((1 30 12 0 1 0) (1 1 0 ^4) (1 8 0 ^4) (1 1 0 ^4) (1 12 0 0 1 0) (1 1 0 ^4) (1 8 0 ^4) (1 1 0 ^4))</param>
+        <param name="simulinkPath">"MCC150/TransceiverBPSK/Scale2"</param>
+        <param name="synthBitAccurate">false</param>
+        <wire name="scaleWireData"/>
+        <wire name="scaleWireOverflow"/>
+        <wire name="wireChannel"/>
+        <wire name="wireValid"/>
+      </block>
+      <block name="SingleRateFIR">
+        <param name="blockType">firBlock</param>
+        <param name="firBandCount">1</param>
+        <param name="firChannelCount">1</param>
+        <param name="firCoefs">((-0xDp-12 -0xAp-12 0 0xCp-12 0x1.3p-8 0xFp-12 0 -0x1.2p-8 -0x1.dp-8 -0x1.8p-8 0 0x2p-8 0x3.5p-8 0x2.dp-8 0 -0x4.4p-8 -0x7.bp-8 -0x7.4p-8 0 0xF.8p-8 0x2.67p-4 0x4.13p-4 0x5.a8p-4 0x6.cap-4 0x7.34p-4 0x6.cap-4 0x5.a8p-4 0x4.13p-4 0x2.67p-4 0xF.8p-8 0 -0x7.4p-8 -0x7.bp-8 -0x4.4p-8 0 0x2.dp-8 0x3.5p-8 0x2p-8 0 -0x1.8p-8 -0x1.dp-8 -0x1.2p-8 0 0xFp-12 0x1.3p-8 0xCp-12 0 -0xAp-12 -0xDp-12))</param>
+        <param name="firCoefsType">(typeSFixed 0 12)</param>
+        <param name="firDecimFactor">1</param>
+        <param name="firInputRate">40</param>
+        <param name="firInterpFactor">1</param>
+        <param name="firMM">((0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19))</param>
+        <param name="firPortData">[/MCC150_TransceiverBPSK/inputBlock/(1 "I_in
+")]</param>
+        <param name="firShapeType">firShapeSymmetrical</param>
+        <param name="portChannel">[/MCC150_TransceiverBPSK/Const3/primWireOut]</param>
+        <param name="portValid">[/MCC150_TransceiverBPSK/Const1/primWireOut]</param>
+        <param name="simulinkExtraCacheKeys">((1 12 0 0 1 0) (1 1 0 ^4) (1 8 0 ^4) (1 30 12 0 1 0) (1 1 0 ^4) (1 8 0 ^4))</param>
+        <param name="simulinkPath">"MCC150/TransceiverBPSK/SingleRateFIR"</param>
+        <wire name="firWireData"/>
+        <wire name="wireChannel"/>
+        <wire name="wireValid"/>
+      </block>
+      <block name="SingleRateFIR1">
+        <param name="blockType">firBlock</param>
+        <param name="firBandCount">1</param>
+        <param name="firChannelCount">1</param>
+        <param name="firCoefs">((-0xDp-12 -0xAp-12 0 0xCp-12 0x1.3p-8 0xFp-12 0 -0x1.2p-8 -0x1.dp-8 -0x1.8p-8 0 0x2p-8 0x3.5p-8 0x2.dp-8 0 -0x4.4p-8 -0x7.bp-8 -0x7.4p-8 0 0xF.8p-8 0x2.67p-4 0x4.13p-4 0x5.a8p-4 0x6.cap-4 0x7.34p-4 0x6.cap-4 0x5.a8p-4 0x4.13p-4 0x2.67p-4 0xF.8p-8 0 -0x7.4p-8 -0x7.bp-8 -0x4.4p-8 0 0x2.dp-8 0x3.5p-8 0x2p-8 0 -0x1.8p-8 -0x1.dp-8 -0x1.2p-8 0 0xFp-12 0x1.3p-8 0xCp-12 0 -0xAp-12 -0xDp-12))</param>
+        <param name="firCoefsType">(typeSFixed 0 12)</param>
+        <param name="firDecimFactor">1</param>
+        <param name="firInputRate">40</param>
+        <param name="firInterpFactor">1</param>
+        <param name="firMM">((0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19))</param>
+        <param name="firPortData">[/MCC150_TransceiverBPSK/inputBlock/(2 Q_in)]</param>
+        <param name="firShapeType">firShapeSymmetrical</param>
+        <param name="portChannel">[/MCC150_TransceiverBPSK/Const4/primWireOut]</param>
+        <param name="portValid">[/MCC150_TransceiverBPSK/Const2/primWireOut]</param>
+        <param name="simulinkExtraCacheKeys">((1 12 0 0 1 0) (1 1 0 ^4) (1 8 0 ^4) (1 30 12 0 1 0) (1 1 0 ^4) (1 8 0 ^4))</param>
+        <param name="simulinkPath">"MCC150/TransceiverBPSK/SingleRateFIR1"</param>
+        <wire name="firWireData"/>
+        <wire name="wireChannel"/>
+        <wire name="wireValid"/>
+      </block>
+      <block name="inputBlock">
+        <param name="blockType">inputBlock</param>
+        <param name="simulinkExtraCacheKeys">((1 12 0 0 1 0) (1 12 0 0 1 0) (1 3 0 ^4))</param>
+        <wire name="(1 &quot;I_in&#xA;&quot;)"/>
+        <wire name="(2 Q_in)"/>
+        <wire name="(3 SampleIndex)"/>
+      </block>
+      <block name="outputBlock">
+        <param name="(1 I_out)">[/MCC150_TransceiverBPSK/Scale/scaleWireData]</param>
+        <param name="(2 Q_out)">[/MCC150_TransceiverBPSK/Const/primWireOut]</param>
+        <param name="(3 &quot; Symb I &quot;)">[/MCC150_TransceiverBPSK/Decimation/(1 I_out)]</param>
+        <param name="(4 &quot; Symb Q&quot;)">[/MCC150_TransceiverBPSK/Decimation/(2 Q_out)]</param>
+        <param name="blockType">outputBlock</param>
+        <param name="metadataTuple">()</param>
+      </block>
+    </model>
+    <model name="MCC150_TransceiverBPSK_Decimation">
+      <param name="avalonMMInterfaceName">bus</param>
+      <param name="simulinkExtraCacheKeys">((1 12 0 0 1 0) (1 12 0 0 1 0) (1 3 0 ^4) (1 1 0 ^4) (1 8 0 ^4) (1 12 0 0 1 0) (1 12 0 0 1 0) (1 1 0 ^4) (1 8 0 ^4))</param>
+      <param name="simulinkPath">"MCC150/TransceiverBPSK/Decimation"</param>
+      <param name="synthATBChannelMismatch">synthATBModeError</param>
+      <param name="synthATBFloatThreshold">0</param>
+      <param name="synthATBFloatZeroThreshold">0</param>
+      <param name="synthATBGPIOMismatch">synthATBModeWarning</param>
+      <param name="synthBitAccurate">false</param>
+      <param name="synthBusAddrWidth">10</param>
+      <param name="synthBusClockMode">synthBusClockSys</param>
+      <param name="synthBusDataWidth">16</param>
+      <param name="synthBusEndianMode">synthBusEndianBig</param>
+      <param name="synthBusFreq">40</param>
+      <param name="synthClockFreq">40</param>
+      <param name="synthClockName">clk</param>
+      <param name="synthCycleAccurate">false</param>
+      <param name="synthDeviceFamily">"Arria 10"</param>
+      <param name="synthDeviceInitialiseMemories">true</param>
+      <param name="synthDevicePart">"10AX066K2F35I1LG"</param>
+      <param name="synthDeviceSpeedGrade">"1"</param>
+      <param name="synthDeviceSubFamily">""</param>
+      <param name="synthGenerateATB">true</param>
+      <param name="synthResetActiveMode">synthResetActiveLow</param>
+      <param name="synthResetName">areset_n</param>
+      <block name="(SampleDelay loopPin)">
+        <param name="0">[/MCC150_TransceiverBPSK_Decimation/SampleDelay/primWireOut]</param>
+        <param name="blockType">typePinBlock</param>
+        <param name="typePinType">(typeUFixed 3 0)</param>
+      </block>
+      <block name="(SampleDelay1 loopPin)">
+        <param name="0">[/MCC150_TransceiverBPSK_Decimation/SampleDelay1/primWireOut]</param>
+        <param name="blockType">typePinBlock</param>
+        <param name="typePinType">(typeSFixed 12 0)</param>
+      </block>
+      <block name="(SampleDelay2 loopPin)">
+        <param name="0">[/MCC150_TransceiverBPSK_Decimation/SampleDelay2/primWireOut]</param>
+        <param name="blockType">typePinBlock</param>
+        <param name="typePinType">(typeSFixed 12 0)</param>
+      </block>
+      <block name="ChannelIn">
+        <param name="0">[/MCC150_TransceiverBPSK_Decimation/inputBlock/(1 I_in)]</param>
+        <param name="1">[/MCC150_TransceiverBPSK_Decimation/inputBlock/(2 Q_in)]</param>
+        <param name="2">[/MCC150_TransceiverBPSK_Decimation/inputBlock/(3 SampleIndex)]</param>
+        <param name="blockType">channelInBlock</param>
+        <param name="portChannel">[/MCC150_TransceiverBPSK_Decimation/inputBlock/(5 dc)]</param>
+        <param name="portValid">[/MCC150_TransceiverBPSK_Decimation/inputBlock/(4 dv)]</param>
+        <param name="scheduleOrigin">true</param>
+        <param name="simulinkExtraCacheKeys">((1 1 0 ^4) (1 8 0 ^4) (1 12 0 0 1 0) (1 12 0 0 1 0) (1 3 0 ^4) (1 1 0 ^4) (1 8 0 ^4) (1 12 0 0 1 0) (1 12 0 0 1 0) (1 3 0 ^4))</param>
+        <param name="simulinkPath">"MCC150/TransceiverBPSK/Decimation/ChannelIn"</param>
+        <wire name="0"/>
+        <wire name="1"/>
+        <wire name="2"/>
+        <wire name="wireChannel"/>
+        <wire name="wireValid"/>
+      </block>
+      <block name="ChannelOut">
+        <param name="0">[/MCC150_TransceiverBPSK_Decimation/Select_PostCast_primWireOut/primWireOut]</param>
+        <param name="1">[/MCC150_TransceiverBPSK_Decimation/Select1_PostCast_primWireOut/primWireOut]</param>
+        <param name="blockType">channelOutBlock</param>
+        <param name="portChannel">[/MCC150_TransceiverBPSK_Decimation/Const/primWireOut]</param>
+        <param name="portValid">[/MCC150_TransceiverBPSK_Decimation/CmpEQ/primWireOut]</param>
+        <param name="simulinkExtraCacheKeys">((1 1 0 ^4) (1 8 0 ^4) (1 12 0 0 1 0) (1 12 0 0 1 0) (1 1 0 ^4) (1 8 0 ^4) (1 12 0 0 1 0) (1 12 0 0 1 0))</param>
+        <param name="simulinkPath">"MCC150/TransceiverBPSK/Decimation/ChannelOut"</param>
+        <wire name="0"/>
+        <wire name="1"/>
+        <wire name="wireChannel"/>
+        <wire name="wireValid"/>
+      </block>
+      <block name="CmpEQ">
+        <param name="0">[/MCC150_TransceiverBPSK_Decimation/SampleDelay/primWireOut]</param>
+        <param name="1">[/MCC150_TransceiverBPSK_Decimation/ChannelIn/2]</param>
+        <param name="blockType">cmpEqBlock</param>
+        <param name="simulinkExtraCacheKeys">((1 3 0 ^4) (1 3 0 ^4) (1 1 0 ^4))</param>
+        <wire name="primWireOut"/>
+      </block>
+      <block name="Const">
+        <param name="blockType">constBlock</param>
+        <param name="constType">(typeUFixed 8 0)</param>
+        <param name="constValue">0</param>
+        <param name="simulinkExtraCacheKeys">((1 8 0 ^4))</param>
+        <wire name="primWireOut"/>
+      </block>
+      <block name="Counter">
+        <param name="blockType">counterBlock</param>
+        <param name="counterInitial">0</param>
+        <param name="counterLimit">8</param>
+        <param name="counterStep">1</param>
+        <param name="portEnable">[/MCC150_TransceiverBPSK_Decimation/ChannelIn/wireValid]</param>
+        <param name="simulinkExtraCacheKeys">((1 1 0 ^4) (1 3 0 ^4))</param>
+        <wire name="primWireOut"/>
+      </block>
+      <block name="SampleDelay">
+        <param name="0">[/MCC150_TransceiverBPSK_Decimation/Counter/primWireOut]</param>
+        <param name="blockType">delayBlock</param>
+        <param name="delayLength">1</param>
+        <param name="simulinkExtraCacheKeys">((1 3 0 ^4) (1 3 0 ^4))</param>
+        <wire name="primWireOut"/>
+      </block>
+      <block name="SampleDelay1">
+        <param name="0">[/MCC150_TransceiverBPSK_Decimation/Select_PostCast_primWireOut/primWireOut]</param>
+        <param name="blockType">delayBlock</param>
+        <param name="delayLength">1</param>
+        <param name="simulinkExtraCacheKeys">((1 12 0 0 1 0) (1 12 0 0 1 0))</param>
+        <wire name="primWireOut"/>
+      </block>
+      <block name="SampleDelay2">
+        <param name="0">[/MCC150_TransceiverBPSK_Decimation/Select1_PostCast_primWireOut/primWireOut]</param>
+        <param name="blockType">delayBlock</param>
+        <param name="delayLength">1</param>
+        <param name="simulinkExtraCacheKeys">((1 12 0 0 1 0) (1 12 0 0 1 0))</param>
+        <wire name="primWireOut"/>
+      </block>
+      <block name="Select">
+        <param name="(selectPortkeyCtrl 0)">[/MCC150_TransceiverBPSK_Decimation/CmpEQ/primWireOut]</param>
+        <param name="(selectPortkeyData 0)">[/MCC150_TransceiverBPSK_Decimation/ChannelIn/0]</param>
+        <param name="blockType">selectBlock</param>
+        <param name="selectPortDefaultData">[/MCC150_TransceiverBPSK_Decimation/SampleDelay1/primWireOut]</param>
+        <param name="simulinkExtraCacheKeys">((1 12 0 0 1 0) (1 1 0 ^4) (1 12 0 0 1 0) (1 12 0 0 1 0) (0 ^6))</param>
+        <wire name="primWireOut"/>
+      </block>
+      <block name="Select1">
+        <param name="(selectPortkeyCtrl 0)">[/MCC150_TransceiverBPSK_Decimation/CmpEQ/primWireOut]</param>
+        <param name="(selectPortkeyData 0)">[/MCC150_TransceiverBPSK_Decimation/ChannelIn/1]</param>
+        <param name="blockType">selectBlock</param>
+        <param name="selectPortDefaultData">[/MCC150_TransceiverBPSK_Decimation/SampleDelay2/primWireOut]</param>
+        <param name="simulinkExtraCacheKeys">((1 12 0 0 1 0) (1 1 0 ^4) (1 12 0 0 1 0) (1 12 0 0 1 0) (0 ^6))</param>
+        <wire name="primWireOut"/>
+      </block>
+      <block name="Select1_PostCast_primWireOut">
+        <param name="0">[/MCC150_TransceiverBPSK_Decimation/Select1/primWireOut]</param>
+        <param name="blockType">castBlock</param>
+        <param name="castMode">castModeConvert</param>
+        <param name="castOutputType">(typeSFixed 12 0)</param>
+        <wire name="primWireOut"/>
+      </block>
+      <block name="Select_PostCast_primWireOut">
+        <param name="0">[/MCC150_TransceiverBPSK_Decimation/Select/primWireOut]</param>
+        <param name="blockType">castBlock</param>
+        <param name="castMode">castModeConvert</param>
+        <param name="castOutputType">(typeSFixed 12 0)</param>
+        <wire name="primWireOut"/>
+      </block>
+      <block name="inputBlock">
+        <param name="blockType">inputBlock</param>
+        <param name="simulinkExtraCacheKeys">((1 12 0 0 1 0) (1 12 0 0 1 0) (1 3 0 ^4) (1 1 0 ^4) (1 8 0 ^4))</param>
+        <wire name="(1 I_in)"/>
+        <wire name="(2 Q_in)"/>
+        <wire name="(3 SampleIndex)"/>
+        <wire name="(4 dv)"/>
+        <wire name="(5 dc)"/>
+      </block>
+      <block name="outputBlock">
+        <param name="(1 I_out)">[/MCC150_TransceiverBPSK_Decimation/ChannelOut/0]</param>
+        <param name="(2 Q_out)">[/MCC150_TransceiverBPSK_Decimation/ChannelOut/1]</param>
+        <param name="(3 qv)">[/MCC150_TransceiverBPSK_Decimation/ChannelOut/wireValid]</param>
+        <param name="(4 qc)">[/MCC150_TransceiverBPSK_Decimation/ChannelOut/wireChannel]</param>
+        <param name="blockType">outputBlock</param>
+        <param name="simulinkExtraCacheKeys">((1 12 0 0 1 0) (1 12 0 0 1 0) (1 1 0 ^4) (1 8 0 ^4))</param>
+      </block>
+    </model>
+    <model name="MCC150_TransceiverBPSK_Modulator">
+      <param name="avalonMMInterfaceName">bus</param>
+      <param name="simulinkExtraCacheKeys">((1 1 0 ^4) (1 8 0 ^4) (1 1 0 ^4) (1 1 0 ^4) (1 8 0 ^4) (1 12 0 0 1 0))</param>
+      <param name="simulinkPath">"MCC150/TransceiverBPSK/Modulator"</param>
+      <param name="synthATBChannelMismatch">synthATBModeError</param>
+      <param name="synthATBFloatThreshold">0</param>
+      <param name="synthATBFloatZeroThreshold">0</param>
+      <param name="synthATBGPIOMismatch">synthATBModeWarning</param>
+      <param name="synthBitAccurate">false</param>
+      <param name="synthBusAddrWidth">10</param>
+      <param name="synthBusClockMode">synthBusClockSys</param>
+      <param name="synthBusDataWidth">16</param>
+      <param name="synthBusEndianMode">synthBusEndianBig</param>
+      <param name="synthBusFreq">40</param>
+      <param name="synthClockFreq">40</param>
+      <param name="synthClockName">clk</param>
+      <param name="synthCycleAccurate">false</param>
+      <param name="synthDeviceFamily">"Arria 10"</param>
+      <param name="synthDeviceInitialiseMemories">true</param>
+      <param name="synthDevicePart">"10AX066K2F35I1LG"</param>
+      <param name="synthDeviceSpeedGrade">"1"</param>
+      <param name="synthDeviceSubFamily">""</param>
+      <param name="synthGenerateATB">true</param>
+      <param name="synthResetActiveMode">synthResetActiveLow</param>
+      <param name="synthResetName">areset_n</param>
+      <block name="ChannelIn">
+        <param name="0">[/MCC150_TransceiverBPSK_Modulator/inputBlock/(3 Data)]</param>
+        <param name="blockType">channelInBlock</param>
+        <param name="portChannel">[/MCC150_TransceiverBPSK_Modulator/inputBlock/(2 dc)]</param>
+        <param name="portValid">[/MCC150_TransceiverBPSK_Modulator/inputBlock/(1 "dv
+")]</param>
+        <param name="scheduleOrigin">true</param>
+        <param name="simulinkExtraCacheKeys">((1 1 0 ^4) (1 8 0 ^4) (1 1 0 ^4) (1 1 0 ^4) (1 8 0 ^4) (1 1 0 ^4))</param>
+        <param name="simulinkPath">"MCC150/TransceiverBPSK/Modulator/ChannelIn"</param>
+        <wire name="0"/>
+        <wire name="wireChannel"/>
+        <wire name="wireValid"/>
+      </block>
+      <block name="ChannelOut">
+        <param name="0">[/MCC150_TransceiverBPSK_Modulator/Select/primWireOut]</param>
+        <param name="blockType">channelOutBlock</param>
+        <param name="portChannel">[/MCC150_TransceiverBPSK_Modulator/ChannelIn/wireChannel]</param>
+        <param name="portValid">[/MCC150_TransceiverBPSK_Modulator/ChannelIn/wireValid]</param>
+        <param name="simulinkExtraCacheKeys">((1 1 0 ^4) (1 8 0 ^4) (1 12 0 0 1 0) (1 1 0 ^4) (1 8 0 ^4) (1 12 0 0 1 0))</param>
+        <param name="simulinkPath">"MCC150/TransceiverBPSK/Modulator/ChannelOut"</param>
+        <wire name="0"/>
+        <wire name="wireChannel"/>
+        <wire name="wireValid"/>
+      </block>
+      <block name="Const">
+        <param name="blockType">constBlock</param>
+        <param name="constType">(typeSFixed 12 0)</param>
+        <param name="constValue">2047</param>
+        <param name="simulinkExtraCacheKeys">((1 12 0 0 1 0))</param>
+        <wire name="primWireOut"/>
+      </block>
+      <block name="Const1">
+        <param name="blockType">constBlock</param>
+        <param name="constType">(typeSFixed 12 0)</param>
+        <param name="constValue">-2047</param>
+        <param name="simulinkExtraCacheKeys">((1 12 0 0 1 0))</param>
+        <wire name="primWireOut"/>
+      </block>
+      <block name="Select">
+        <param name="(selectPortkeyCtrl 0)">[/MCC150_TransceiverBPSK_Modulator/ChannelIn/0]</param>
+        <param name="(selectPortkeyData 0)">[/MCC150_TransceiverBPSK_Modulator/Const1/primWireOut]</param>
+        <param name="blockType">selectBlock</param>
+        <param name="selectPortDefaultData">[/MCC150_TransceiverBPSK_Modulator/Const/primWireOut]</param>
+        <param name="simulinkExtraCacheKeys">((1 12 0 0 1 0) (1 1 0 ^4) (1 12 0 0 1 0) (1 12 0 0 1 0) (0 ^6))</param>
+        <wire name="primWireOut"/>
+      </block>
+      <block name="inputBlock">
+        <param name="blockType">inputBlock</param>
+        <param name="simulinkExtraCacheKeys">((1 1 0 ^4) (1 8 0 ^4) (1 1 0 ^4))</param>
+        <wire name="(1 &quot;dv&#xA;&quot;)"/>
+        <wire name="(2 dc)"/>
+        <wire name="(3 Data)"/>
+      </block>
+      <block name="outputBlock">
+        <param name="(1 qv)">[/MCC150_TransceiverBPSK_Modulator/ChannelOut/wireValid]</param>
+        <param name="(2 qc)">[/MCC150_TransceiverBPSK_Modulator/ChannelOut/wireChannel]</param>
+        <param name="(3 I)">[/MCC150_TransceiverBPSK_Modulator/ChannelOut/0]</param>
+        <param name="blockType">outputBlock</param>
+        <param name="simulinkExtraCacheKeys">((1 1 0 ^4) (1 8 0 ^4) (1 12 0 0 1 0))</param>
+      </block>
+    </model>
+    <model name="MCC150_TransceiverBPSK_PRBSGenerator">
+      <param name="avalonMMInterfaceName">bus</param>
+      <param name="simulinkExtraCacheKeys">((1 1 0 ^4) (1 8 0 ^4) (1 1 0 ^4))</param>
+      <param name="simulinkPath">"MCC150/TransceiverBPSK/PRBSGenerator"</param>
+      <param name="synthATBChannelMismatch">synthATBModeError</param>
+      <param name="synthATBFloatThreshold">0</param>
+      <param name="synthATBFloatZeroThreshold">0</param>
+      <param name="synthATBGPIOMismatch">synthATBModeWarning</param>
+      <param name="synthBitAccurate">false</param>
+      <param name="synthBusAddrWidth">10</param>
+      <param name="synthBusClockMode">synthBusClockSys</param>
+      <param name="synthBusDataWidth">16</param>
+      <param name="synthBusEndianMode">synthBusEndianBig</param>
+      <param name="synthBusFreq">40</param>
+      <param name="synthClockFreq">40</param>
+      <param name="synthClockName">clk</param>
+      <param name="synthCycleAccurate">false</param>
+      <param name="synthDeviceFamily">"Arria 10"</param>
+      <param name="synthDeviceInitialiseMemories">true</param>
+      <param name="synthDevicePart">"10AX066K2F35I1LG"</param>
+      <param name="synthDeviceSpeedGrade">"1"</param>
+      <param name="synthDeviceSubFamily">""</param>
+      <param name="synthGenerateATB">true</param>
+      <param name="synthResetActiveMode">synthResetActiveLow</param>
+      <param name="synthResetName">areset_n</param>
+      <block name="(SampleDelay loopPin)">
+        <param name="0">[/MCC150_TransceiverBPSK_PRBSGenerator/SampleDelay/primWireOut]</param>
+        <param name="blockType">typePinBlock</param>
+        <param name="typePinType">(typeUFixed 10 0)</param>
+      </block>
+      <block name="ChannelOut">
+        <param name="0">[/MCC150_TransceiverBPSK_PRBSGenerator/DualMem/dualMemWireData1]</param>
+        <param name="blockType">channelOutBlock</param>
+        <param name="portChannel">[/MCC150_TransceiverBPSK_PRBSGenerator/Const/primWireOut]</param>
+        <param name="portValid">[/MCC150_TransceiverBPSK_PRBSGenerator/Sequence/primWireOut]</param>
+        <param name="simulinkExtraCacheKeys">((1 1 0 ^4) (1 16 0 0 1 0) (1 1 0 ^4) (1 1 0 ^4) (1 8 0 ^4) (1 1 0 ^4))</param>
+        <param name="simulinkPath">"MCC150/TransceiverBPSK/PRBSGenerator/ChannelOut"</param>
+        <wire name="0"/>
+        <wire name="wireChannel"/>
+        <wire name="wireValid"/>
+      </block>
+      <block name="Const">
+        <param name="blockType">constBlock</param>
+        <param name="constType">(typeSFixed 16 0)</param>
+        <param name="constValue">0</param>
+        <param name="simulinkExtraCacheKeys">((1 16 0 0 1 0))</param>
+        <wire name="primWireOut"/>
+      </block>
+      <block name="Const1">
+        <param name="blockType">constBlock</param>
+        <param name="constType">(typeUFixed 1 0)</param>
+        <param name="constValue">1</param>
+        <param name="simulinkExtraCacheKeys">((1 1 0 ^4))</param>
+        <wire name="primWireOut"/>
+      </block>
+      <block name="Const2">
+        <param name="blockType">constBlock</param>
+        <param name="constType">(typeSFixed 16 0)</param>
+        <param name="constValue">0</param>
+        <param name="simulinkExtraCacheKeys">((1 16 0 0 1 0))</param>
+        <wire name="primWireOut"/>
+      </block>
+      <block name="Const3">
+        <param name="blockType">constBlock</param>
+        <param name="constType">(typeSFixed 16 0)</param>
+        <param name="constValue">0</param>
+        <param name="simulinkExtraCacheKeys">((1 16 0 0 1 0))</param>
+        <wire name="primWireOut"/>
+      </block>
+      <block name="Const4">
+        <param name="blockType">constBlock</param>
+        <param name="constType">(typeUFixed 1 0)</param>
+        <param name="constValue">0</param>
+        <param name="simulinkExtraCacheKeys">((1 1 0 ^4))</param>
+        <wire name="primWireOut"/>
+      </block>
+      <block name="Counter">
+        <param name="blockType">counterBlock</param>
+        <param name="counterInitial">0</param>
+        <param name="counterLimit">1024</param>
+        <param name="counterStep">1</param>
+        <param name="portEnable">[/MCC150_TransceiverBPSK_PRBSGenerator/Sequence/primWireOut]</param>
+        <param name="simulinkExtraCacheKeys">((1 1 0 ^4) (1 10 0 ^4))</param>
+        <wire name="primWireOut"/>
+      </block>
+      <block name="DualMem">
+        <param name="blockType">dualMemBlock</param>
+        <param name="dualMemData">(1 0 1 0 0 1 1 0 1 0 1 0 0 0 1 ^5 0 1 0 1 0 1 1 0 1 0 0 1 1 1 0 ^4 1 1 0 1 ^5 0 0 1 0 1 1 0 1 0 0 1 0 ^4 1 1 0 1 ^4 0 1 ^6 0 ^5 1 ^4 0 ^10 1 0 1 0 0 1 ^7 0 0 1 0 1 0 0 0 1 ^7 0 0 0 1 1 0 1 0 0 1 ^6 0 0 1 0 0 0 1 ^6 0 1 0 0 0 1 1 1 0 1 1 0 0 1 1 0 0 0 1 0 1 1 0 1 ^4 0 ^6 1 0 1 1 0 0 0 1 0 1 0 0 1 1 1 0 0 1 1 0 0 0 1 0 ^8 1 0 1 0 0 1 1 0 0 0 1 1 1 0 1 1 0 1 0 1 1 1 0 1 0 1 1 1 0 0 0 1 1 0 1 0 0 0 1 1 1 0 ^4 1 0 0 1 0 1 1 1 0 1 1 1 0 1 0 1 1 0 1 0 1 0 1 1 1 0 0 1 1 0 0 1 1 0 1 1 1 0 0 0 1 0 1 0 0 1 1 1 0 0 0 1 ^6 0 0 1 1 0 ^5 1 0 0 1 0 ^5 1 0 1 ^6 0 1 0 ^5 1 0 1 1 1 0 0 0 1 0 0 0 1 1 1 0 1 0 0 1 0 1 1 0 ^4 1 0 1 0 1 0 ^5 1 0 0 1 0 ^4 1 0 1 1 0 0 1 0 0 0 1 1 0 1 0 0 1 0 0 0 1 0 1 0 0 1 0 1 ^4 0 0 0 1 0 1 0 0 1 1 1 0 0 0 1 ^5 0 1 ^4 0 1 0 1 1 0 1 0 1 1 1 0 0 1 1 0 1 0 1 1 0 0 1 0 ^4 1 0 1 0 ^4 1 0 1 0 0 1 0 1 1 0 0 0 1 0 0 1 1 0 1 0 1 1 1 0 0 1 1 0 ^7 1 1 1 0 1 0 0 1 1 0 ^7 1 1 0 1 0 1 1 0 0 0 1 0 1 1 1 0 0 0 1 0 0 1 1 0 1 0 0 1 1 1 0 0 1 1 0 1 0 0 1 0 1 0 ^4 1 ^6 0 ^4 1 0 1 0 1 1 0 1 0 0 1 0 0 1 0 1 1 0 1 1 0 1 ^4 0 1 0 1 1 0 1 1 0 0 1 1 1 0 0 1 1 0 1 1 1 0 ^5 1 0 0 1 1 0 1 1 1 0 ^6 1 0 0 1 0 0 1 1 0 1 0 1 1 0 ^5 1 1 0 1 0 1 1 1 0 1 0 0 0 1 0 0 0 1 ^4 0 0 1 0 1 1 0 0 0 1 1 0 1 0 1 1 0 0 1 1 1 0 0 1 1 0 1 1 0 ^5 1 0 1 1 0 1 1 0 1 0 1 0 0 1 ^4 0 1 0 0 0 1 ^5 0 0 0 1 0 1 0 ^4 1 ^6 0 ^7 1 0 ^4 1 0 0 1 0 0 0 1 0 0 1 0 1 1 0 1 ^5 0 0 1 1 1 0 1 0 1 1 1 0 1 1 0 0 0 1 1 0 1 0 ^4 1 0 0 1 1 0 1 0 1 1 0 0 1 1 0 0 0 1 1 1 0 0 1 0 0 0 1 0 0 1 1 1 0 1 1 1 0 1 0 1 1 0 ^5 1 0 1 ^4 0 1 ^6 0 0 1 0 1 0 1 0 1 0 1 0 0 1 0 0 1 0 1 ^4 0 0 0 1 0 ^7 1 1 0 ^5 1 1 0 1 0 0 0 1 1 1 0 ^4 1 0 0 1 0 0 0 1 1 0 1 1 0 1 1 0 1 0 0 1 0 1 ^4 0 1 1 0 ^5 1 1 0 1 0 0 1 0 ^4 1 0 1 1 0 0 1 0 1 1 0 1 0 1 0 1 0 1 ^5 0 0 0 1 0 0 1 1 0 1 0 ^7 1 1 0 1 1)</param>
+        <param name="dualMemPortAddr1">[/MCC150_TransceiverBPSK_PRBSGenerator/SampleDelay/primWireOut]</param>
+        <param name="dualMemPortAddr2">[/MCC150_TransceiverBPSK_PRBSGenerator/Const3/primWireOut]</param>
+        <param name="dualMemPortData1">[/MCC150_TransceiverBPSK_PRBSGenerator/Const2/primWireOut]</param>
+        <param name="dualMemPortWrite1En">[/MCC150_TransceiverBPSK_PRBSGenerator/Const4/primWireOut]</param>
+        <param name="dualMemRWConflictMode">dualMemRWConflictIgnore</param>
+        <param name="dualMemTypeData1">(typeUFixed 1 0)</param>
+        <param name="simulinkExtraCacheKeys">((1 16 0 0 1 0) (1 10 0 ^4) (1 1 0 ^4) (1 16 0 0 1 0) (1 1 0 ^4) (1 1 0 ^4))</param>
+        <wire name="dualMemWireData1"/>
+        <wire name="dualMemWireData2"/>
+      </block>
+      <block name="SampleDelay">
+        <param name="0">[/MCC150_TransceiverBPSK_PRBSGenerator/Counter/primWireOut]</param>
+        <param name="blockType">delayBlock</param>
+        <param name="delayLength">1</param>
+        <param name="simulinkExtraCacheKeys">((1 10 0 ^4) (1 10 0 ^4))</param>
+        <wire name="primWireOut"/>
+      </block>
+      <block name="Sequence">
+        <param name="blockType">sequenceBlock</param>
+        <param name="portEnable">[/MCC150_TransceiverBPSK_PRBSGenerator/Const1/primWireOut]</param>
+        <param name="sequencePeriod">8</param>
+        <param name="sequencePhase">0</param>
+        <param name="sequenceStep">7</param>
+        <param name="simulinkExtraCacheKeys">((1 1 0 ^4) (1 1 0 ^4))</param>
+        <wire name="primWireOut"/>
+      </block>
+      <block name="outputBlock">
+        <param name="(1 qv)">[/MCC150_TransceiverBPSK_PRBSGenerator/ChannelOut/wireValid]</param>
+        <param name="(2 qc)">[/MCC150_TransceiverBPSK_PRBSGenerator/ChannelOut/wireChannel]</param>
+        <param name="(3 PRBS)">[/MCC150_TransceiverBPSK_PRBSGenerator/ChannelOut/0]</param>
+        <param name="blockType">outputBlock</param>
+        <param name="simulinkExtraCacheKeys">((1 1 0 ^4) (1 8 0 ^4) (1 1 0 ^4))</param>
+      </block>
+    </model>
+  </design>
+
+</dsp-builder>

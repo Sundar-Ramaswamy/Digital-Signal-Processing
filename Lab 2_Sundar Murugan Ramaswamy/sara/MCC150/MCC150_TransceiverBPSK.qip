@@ -1,0 +1,19 @@
+# This is the QIP file for DSP Builder for Intel FPGAs system 'MCC150_TransceiverBPSK'
+
+set_global_assignment -name VHDL_FILE ../sara/MCC150/MCC150_TransceiverBPSK_safe_path.vhd
+set_global_assignment -name VHDL_FILE ../sara/MCC150/MCC150_TransceiverBPSK_safe_path.vhd
+set_global_assignment -name VHDL_FILE ../sara/MCC150/MCC150_TransceiverBPSK_safe_path.vhd
+set_global_assignment -name VHDL_FILE ../sara/MCC150/MCC150_TransceiverBPSK_safe_path.vhd
+set_global_assignment -name VHDL_FILE ../sara/MCC150/MCC150_TransceiverBPSK.vhd
+set_global_assignment -name VHDL_FILE ../sara/MCC150/MCC150_TransceiverBPSK.vhd
+set_global_assignment -name VHDL_FILE ../sara/MCC150/MCC150_TransceiverBPSK.vhd
+set_global_assignment -name VHDL_FILE ../sara/MCC150/MCC150_TransceiverBPSK.vhd
+set_global_assignment -name QIP_FILE ../sara/MCC150/MCC150_TransceiverBPSK_Decimation.qip
+set_global_assignment -name QIP_FILE ../sara/MCC150/MCC150_TransceiverBPSK_InterpolatingFIR.qip
+set_global_assignment -name QIP_FILE ../sara/MCC150/MCC150_TransceiverBPSK_Modulator.qip
+set_global_assignment -name QIP_FILE ../sara/MCC150/MCC150_TransceiverBPSK_PRBSGenerator.qip
+set_global_assignment -name QIP_FILE ../sara/MCC150/MCC150_TransceiverBPSK_Scale.qip
+set_global_assignment -name QIP_FILE ../sara/MCC150/MCC150_TransceiverBPSK_Scale1.qip
+set_global_assignment -name QIP_FILE ../sara/MCC150/MCC150_TransceiverBPSK_Scale2.qip
+set_global_assignment -name QIP_FILE ../sara/MCC150/MCC150_TransceiverBPSK_SingleRateFIR.qip
+set_global_assignment -name QIP_FILE ../sara/MCC150/MCC150_TransceiverBPSK_SingleRateFIR1.qip

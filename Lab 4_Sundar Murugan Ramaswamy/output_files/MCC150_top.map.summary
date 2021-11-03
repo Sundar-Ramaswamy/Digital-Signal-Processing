@@ -1,0 +1,17 @@
+Analysis & Synthesis Status : Successful - Tue May 25 20:20:36 2021
+Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Standard Edition
+Revision Name : MCC150_top
+Top-level Entity Name : MCC150_top
+Family : Cyclone V
+Logic utilization (in ALMs) : N/A
+Total registers : 7182
+Total pins : 27
+Total virtual pins : 0
+Total block memory bits : 372,020
+Total DSP Blocks : 35
+Total HSSI RX PCSs : 0
+Total HSSI PMA RX Deserializers : 0
+Total HSSI TX PCSs : 0
+Total HSSI PMA TX Serializers : 0
+Total PLLs : 2
+Total DLLs : 0

@@ -1,0 +1,21 @@
+<?xml version='1.0'?>
+<island simulinkPath='MCC150/TransceiverBPSK/InterpolatingFIR' topLevelEntity='MCC150_TransceiverBPSK_InterpolatingFIR'>
+    <port name='clk' dir='in' role='clock'/>
+    <port name='areset_n' dir='in' clock='clk' role='resetLow'/>
+    <port name='xIn_v' clock='clk' reset='areset_n' width='1' dir='in' role='valid' qsys_role='valid_xIn_v' stm=''/>
+    <port name='xIn_c' clock='clk' reset='areset_n' width='8' dir='in' role='channel' qsys_role='channel_xIn_c' stm=''/>
+    <port name='xIn_0' clock='clk' reset='areset_n' width='12' dir='in' role='data' qsys_role='data_xIn_0' stm=''/>
+    <port name='xOut_v' clock='clk' reset='areset_n' width='1' dir='out' role='valid' qsys_role='valid_xOut_v' stm=''/>
+    <port name='xOut_c' clock='clk' reset='areset_n' width='8' dir='out' role='channel' qsys_role='channel_xOut_c' stm=''/>
+    <port name='xOut_0' clock='clk' reset='areset_n' width='27' dir='out' role='data' qsys_role='data_xOut_0' stm=''/>
+    <file path='eda/sim_lib/altera_primitives_components.vhd' base='quartus' type='vhdl' usage='simOnly' lib='altera'/>
+    <file path='eda/sim_lib/altera_mf_components.vhd' base='quartus' type='vhdl' usage='simOnly' lib='altera_mf'/>
+    <file path='eda/sim_lib/altera_mf.vhd' base='quartus' type='vhdl' usage='simOnly' lib='altera_mf'/>
+    <file path='eda/sim_lib/220pack.vhd' base='quartus' type='vhdl' usage='simOnly' lib='lpm'/>
+    <file path='eda/sim_lib/220model.vhd' base='quartus' type='vhdl' usage='simOnly' lib='lpm'/>
+    <file path='eda/sim_lib/altera_lnsim_components.vhd' base='quartus' type='vhdl' usage='simOnly' lib='altera_lnsim'/>
+    <file path='eda/sim_lib/altera_lnsim.sv' base='quartus' type='vhdl' usage='simOnly' lib='altera_lnsim'/>
+    <file path='eda/sim_lib/twentynm_atoms.vhd' base='quartus' type='vhdl' usage='simOnly' lib='twentynm'/>
+    <file path='eda/sim_lib/twentynm_components.vhd' base='quartus' type='vhdl' usage='simOnly' lib='twentynm'/>
+    <file path='eda/sim_lib/mentor/twentynm_atoms_ncrypt.v' base='quartus' type='vhdl' usage='simOnly' lib='twentynm'/>
+</island>

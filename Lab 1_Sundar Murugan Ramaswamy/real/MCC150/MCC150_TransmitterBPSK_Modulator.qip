@@ -1,0 +1,10 @@
+# This is the QIP file for DSP Builder for Intel FPGAs system 'MCC150_TransmitterBPSK_Modulator'
+
+set_global_assignment -name VHDL_FILE ../real/MCC150/MCC150_TransmitterBPSK_safe_path.vhd
+set_global_assignment -name VHDL_FILE ../real/MCC150/MCC150_TransmitterBPSK_safe_path.vhd
+set_global_assignment -name VHDL_FILE ../real/MCC150/MCC150_TransmitterBPSK_safe_path.vhd
+set_global_assignment -name VHDL_FILE ../real/MCC150/MCC150_TransmitterBPSK_safe_path.vhd
+set_global_assignment -name VHDL_FILE ../real/MCC150/MCC150_TransmitterBPSK_Modulator.vhd
+set_global_assignment -name VHDL_FILE ../real/MCC150/MCC150_TransmitterBPSK_Modulator.vhd
+set_global_assignment -name VHDL_FILE ../real/MCC150/MCC150_TransmitterBPSK_Modulator.vhd
+set_global_assignment -name VHDL_FILE ../real/MCC150/MCC150_TransmitterBPSK_Modulator.vhd

@@ -1,0 +1,23 @@
+<?xml version='1.0'?>
+<island simulinkPath='MCC150/TransmitterBPSK' topLevelEntity='MCC150_TransmitterBPSK'>
+    <port name='clk' dir='in' role='clock'/>
+    <port name='areset_n' dir='in' clock='clk' role='resetLow'/>
+    <port name='I_out' clock='clk' reset='areset_n' width='12' dir='out' role='data' qsys_role='data_I_out' stm='MCC150/MCC150_TransmitterBPSK_Modulator_ChannelOut.stm' highLevelName='I_out' highLevelIndex='1' vector='0' complex='0'/>
+    <port name='Q_out' clock='clk' reset='areset_n' width='12' dir='out' role='data' qsys_role='data_Q_out' stm='' highLevelName='Q_out' highLevelIndex='2' vector='0' complex='0'/>
+    <file path='eda/sim_lib/altera_primitives_components.vhd' base='quartus' type='vhdl' usage='simOnly' lib='altera'/>
+    <file path='eda/sim_lib/altera_mf_components.vhd' base='quartus' type='vhdl' usage='simOnly' lib='altera_mf'/>
+    <file path='eda/sim_lib/altera_mf.vhd' base='quartus' type='vhdl' usage='simOnly' lib='altera_mf'/>
+    <file path='eda/sim_lib/220pack.vhd' base='quartus' type='vhdl' usage='simOnly' lib='lpm'/>
+    <file path='eda/sim_lib/220model.vhd' base='quartus' type='vhdl' usage='simOnly' lib='lpm'/>
+    <file path='eda/sim_lib/altera_lnsim_components.vhd' base='quartus' type='vhdl' usage='simOnly' lib='altera_lnsim'/>
+    <file path='eda/sim_lib/altera_lnsim.sv' base='quartus' type='vhdl' usage='simOnly' lib='altera_lnsim'/>
+    <file path='MCC150/MCC150_TransmitterBPSK_safe_path_msim.vhd' base='rtl' type='vhdl' usage='simOnly'/>
+    <file path='MCC150/MCC150_TransmitterBPSK_safe_path.vhd' base='rtl' type='vhdl' usage='synthOnly'/>
+    <file path='MCC150/MCC150_TransmitterBPSK.vhd' base='rtl' type='vhdl' usage='all'/>
+    <file path='dspba/backend/Libraries/vhdl/base/dspba_library_package.vhd' base='quartus' type='vhdl' usage='all'/>
+    <file path='dspba/backend/Libraries/vhdl/base/dspba_library.vhd' base='quartus' type='vhdl' usage='all'/>
+    <file path='MCC150/MCC150_TransmitterBPSK_Modulator.vhd' base='rtl' type='vhdl' usage='all'/>
+    <file path='MCC150/MCC150_TransmitterBPSK_PRBSGenerator.vhd' base='rtl' type='vhdl' usage='all'/>
+    <file path='MCC150/MCC150_TransmitterBPSK_PRBSGenerator_DualMem.hex' base='rtl' type='data' usage='all'/>
+
+</island>

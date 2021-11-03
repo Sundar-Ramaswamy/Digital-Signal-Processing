@@ -1,0 +1,15 @@
+# This is the QIP file for DSP Builder for Intel FPGAs system 'MCC150_TransmitterBPSK_PRBSGenerator'
+
+set_global_assignment -name VHDL_FILE ../real/MCC150/MCC150_TransmitterBPSK_safe_path.vhd
+set_global_assignment -name VHDL_FILE ../real/MCC150/MCC150_TransmitterBPSK_safe_path.vhd
+set_global_assignment -name VHDL_FILE ../real/MCC150/MCC150_TransmitterBPSK_safe_path.vhd
+set_global_assignment -name VHDL_FILE ../real/MCC150/MCC150_TransmitterBPSK_safe_path.vhd
+set_global_assignment -name VHDL_FILE ../real/MCC150/MCC150_TransmitterBPSK_PRBSGenerator.vhd
+set_global_assignment -name VHDL_FILE ../real/MCC150/MCC150_TransmitterBPSK_PRBSGenerator.vhd
+set_global_assignment -name VHDL_FILE ../real/MCC150/MCC150_TransmitterBPSK_PRBSGenerator.vhd
+set_global_assignment -name VHDL_FILE ../real/MCC150/MCC150_TransmitterBPSK_PRBSGenerator.vhd
+set_global_assignment -name HEX_FILE ../real/MCC150/MCC150_TransmitterBPSK_PRBSGenerator_DualMem.hex
+set_global_assignment -name HEX_FILE ../real/MCC150/MCC150_TransmitterBPSK_PRBSGenerator_DualMem.hex
+set_global_assignment -name HEX_FILE ../real/MCC150/MCC150_TransmitterBPSK_PRBSGenerator_DualMem.hex
+set_global_assignment -name HEX_FILE ../real/MCC150/MCC150_TransmitterBPSK_PRBSGenerator_DualMem.hex
+set_global_assignment -name HEX_FILE ../real/MCC150/MCC150_TransmitterBPSK_PRBSGenerator_DualMem.hex

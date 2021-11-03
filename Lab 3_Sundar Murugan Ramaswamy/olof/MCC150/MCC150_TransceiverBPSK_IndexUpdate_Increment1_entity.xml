@@ -1,0 +1,4 @@
+<?xml version='1.0' encoding='ISO-8859-1' ?>
+<entity name='MCC150_TransceiverBPSK_IndexUpdate_Increment1' floating-point-script-prefix='MCC150_TransceiverBPSK_IndexUpdate_Increment1_fpc'>
+  <clock name='sys' port='clk' reset='areset_n' reset-type='low' />
+</entity>
